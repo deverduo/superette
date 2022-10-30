@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: modern;
+    margin: 0px;
+    
+}
+
+@font-face { font-family: modern; src: url('fonts/Sk-Modernist-Regular.otf'); } 
+@font-face { font-family: courgette; src: url('fonts/ginebra_font.ttf'); } 
