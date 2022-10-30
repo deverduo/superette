@@ -14,6 +14,7 @@ function createwindow(){
         protocol: 'file',
         slashes: true
     }));
+    win.webContents.openDevTools();
     win.on('closed',()=>{
         win = null;
     })
