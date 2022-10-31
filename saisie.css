@@ -1,0 +1,74 @@
+.myMarket{
+    font-family: modern;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-size: 9em;
+    width: fit-content;
+    background-image: linear-gradient(to left, #795344, #2e7099);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form_saisie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+    gap: 30px;
+}
+.input_saisie{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1em;
+    transition: .5s;
+}
+.label_saisie{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    pointer-events: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    transition: .5s;
+    color: whitesmoke;
+}
+.input_saisie:valid ~ .label_saisie,
+.input_saisie:focus ~ .label_saisie{
+    transform: translate(10px,-7px);
+    font-size: 0.9em;
+    padding: 0 10px;
+    border-left: 1px solid #2e7099;
+    border-right: 1px solid #2e7099;
+    background-color: #a8928a;
+    letter-spacing: 0.2em;
+}
+.input_saisie:valid,
+.input_saisie:focus{
+    border: 1.2px solid #042336;
+}
+.saisie{
+    position: relative;
+    width: 100%;
+}
+.confirm{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 40%;
+    background-color: #042941;
+    color: #967a70;
+    transition: .3s;
+    font-size: 1.6em;
+    height: 60px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+.confirm:hover{
+    background-color: #967a70;
+    color: #042941;
+}

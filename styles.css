@@ -10,3 +10,18 @@ body {
 
 @font-face { font-family: modern; src: url('fonts/Sk-Modernist-Regular.otf'); } 
 @font-face { font-family: courgette; src: url('fonts/ginebra_font.ttf'); } 
+
+.home{
+    position: absolute;
+    min-height: 120vh;
+    height: max-content;
+    width: 100%;
+    background-image: linear-gradient(to right, #c59e8e, #84a8be);
+    top: 0%;
+}
+.launch{
+   position: relative;
+   height: 100%;
+   width: 100%;
+   margin-bottom: 30px;
+}
