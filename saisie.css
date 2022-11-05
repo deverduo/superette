@@ -48,6 +48,15 @@
     background-color: #a8928a;
     letter-spacing: 0.2em;
 }
+.valid{
+    transform: translate(10px,-7px);
+    font-size: 0.9em;
+    padding: 0 10px;
+    border-left: 1px solid #2e7099;
+    border-right: 1px solid #2e7099;
+    background-color: #a8928a;
+    letter-spacing: 0.2em;
+}
 .input_saisie:valid,
 .input_saisie:focus{
     border: 1.2px solid #042336;
@@ -68,7 +77,39 @@
     letter-spacing: 0.2em;
     cursor: pointer;
 }
-.confirm:hover{
+
+.confirm_label{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 40%;
+    background-color: #042941;
+    color: #967a70;
+    transition: .3s;
+    font-size: 1.6em;
+    padding: 10px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    text-align: center;
+}
+.confirm:hover,.confirm_label:hover{
     background-color: #967a70;
     color: #042941;
+}
+
+#confirmer:checked~#label_confirmer{
+    background-color: #967a70;
+    color: #042941;
+    font-size: 1.2em;
+    cursor:not-allowed;
+
+}
+#modifier:checked~#label_modifier{
+    background-color: #967a70;
+    color: #042941;
+    font-size: 1.2em;
+    cursor:not-allowed;
+
+}
+#modifier:checked~#nomp{
+    
 }

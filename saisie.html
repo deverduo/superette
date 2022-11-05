@@ -13,12 +13,21 @@
                 <h1 class="myMarket">Ajouter produit</h1>
 
                 <form class="form_saisie">
-                    <div class="saisie"> <input type="text" id="nom" class="input_saisie" required> <label for="nom" class="label_saisie">Nom</label></div>
-                    <div class="saisie"><input type="number" id="code" class="input_saisie" required> <label for="code" class="label_saisie">Code à barres </label></div>
+                    <div class="saisie"> <input type="text" id="nom" class="input_saisie" required> <label for="nom" class="label_saisie">Fournisseur </label></div>
+                    <div class="saisie"><input type="date" id="date" class="input_saisie" required> <label for="date" class="label_saisie valid">Date d'achat </label></div>
+                    <div class="saisie"><input type="number" id="nf" class="input_saisie" required><label for="nf" class="label_saisie">Numéro de facture</label></div>
+                    <span style="display: inline;">
+                        <input type="radio" class="confirm" id="confirmer" name="access" style="display: none;"><label for="confirmer" class="confirm_label" id="label_confirmer">CONFIRMER</label>
+                        <input type="radio" class="confirm" id="modifier" name="access" style="display: none;"  checked><label for="modifier" class="confirm_label" id="label_modifier">MODIFIER</label>
+                    </span>
+                    <div class="saisie"> <input type="text" id="nompr" class="input_saisie" required> <label for="nompr" class="label_saisie">Nom produit </label></div>
+                    <div class="saisie"><input type="number" id="cb" class="input_saisie" required> <label for="cb" class="label_saisie">Code à barres</label></div>
+                    <div class="saisie"><input type="number" id="qnt" class="input_saisie" required><label for="qnt" class="label_saisie">Quantité</label></div>
                     <div class="saisie"><input type="number" id="pa" class="input_saisie" required><label for="pa" class="label_saisie">Prix d'achat</label></div>
-                    <div class="saisie"><input type="number" id="pv" class="input_saisie" required> <label for="pv"  class="label_saisie">Prix de vente</label></div>
-                    <div class="saisie"><input type="number" id="qnt" class="input_saisie" required> <label for="qnt" class="label_saisie">Quantité </label></div>
-                    <input type="submit" class="confirm" value="AJOUTER">
+                    <div class="saisie"><input type="number" id="pv" class="input_saisie" required><label for="pv" class="label_saisie">Prix de vente</label></div>
+
+                    <input type="submit" value="AJOUTER" class="confirm" id="ajouter">
+
                 </form>
                 
            </div>  
