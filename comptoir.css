@@ -1,0 +1,137 @@
+.myMarket{
+    font-family: modern;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-size: 9em;
+    width: fit-content;
+    background-image: linear-gradient(to left, #795344, #2e7099);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comptoir{
+    font-family: modern;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+    height: max-content;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.total{
+    height: fit-content;
+    width: 100%;
+    font-size: 100px;
+    border: 3px solid #042336;
+    border-bottom: none;
+}
+
+.vente{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-height: 100vh;
+    border: 3px solid #042336;
+    border-top: none;
+    border-bottom: none;
+}
+
+.enter{
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid #042336;
+    align-items: center;
+}
+
+.saisie{
+    position: relative;
+    width: 80%;
+    margin: 8%;
+}
+
+.input_comptoir{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1em;
+    
+}
+.label_comptoir{
+    position: absolute;
+    top: 0;
+    transform: translate(10px,-7px);
+    left: 20px;
+    pointer-events: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 0.9em;
+    padding: 0 10px;
+    border-left: 1px solid #2e7099;
+    border-right: 1px solid #2e7099;
+    background-color: #a8928a;
+    letter-spacing: 0.2em;
+}
+
+.bouton_comptoir{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #042941;
+    color: #967a70;
+    transition: .3s;
+    font-size: 1.6em;
+    height: max-content;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+
+.bouton_comptoir:hover:hover{
+    background-color: #967a70;
+    color: #042941;
+}
+
+.liste{
+    width: 100%;
+    margin: 0;
+    border: 3px solid #042336;
+    border-right: none;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    background-color: #c59e8e;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px solid #042336;
+}
+
+td{
+    font-size: 20px;
+    border-bottom: 2px solid #042336;
+}
+
+tr:nth-child(odd){
+    height: 30px;
+    background-color: #36749b;
+}
+tr:nth-child(even){
+    height: 30px;
+    background-color: #557e97;
+}
+
+
+
+.first{
+    top: 0;
+    
+}
