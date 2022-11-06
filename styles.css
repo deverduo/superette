@@ -25,3 +25,13 @@ body {
    width: 100%;
    margin-bottom: 30px;
 }
+.myMarket{
+    font-family: modern;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-size: 9em;
+    width: fit-content;
+    background-image: linear-gradient(to left, #795344, #2e7099);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

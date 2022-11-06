@@ -1,0 +1,48 @@
+table{
+    width: 80%;
+    margin: 10%;
+}
+.nom_compte{
+    width: 60%;
+    font-size: 2em;
+
+}
+tr{
+    height: 50px;
+}
+td{
+    padding: 10px;
+}
+.bouton_table{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #042941;
+    color: #967a70;
+    transition: .3s;
+    font-size: 1em;
+    height: 60px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    padding: 10px;
+}
+.bouton_table:hover{
+    background-color: #967a70;
+    color: #042941;
+}
+.confirm{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 40%;
+    background-color: #042941;
+    color: #967a70;
+    transition: .3s;
+    font-size: 1.6em;
+    height: 60px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.confirm:hover{
+    background-color: #967a70;
+    color: #042941;
+}

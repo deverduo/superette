@@ -13,13 +13,16 @@
                 <h1 class="myMarket">Ajouter produit</h1>
 
                 <form class="form_saisie">
-                    <div class="saisie"> <input type="text" id="nom" class="input_saisie" required> <label for="nom" class="label_saisie">Fournisseur </label></div>
-                    <div class="saisie"><input type="date" id="date" class="input_saisie" required> <label for="date" class="label_saisie valid">Date d'achat </label></div>
-                    <div class="saisie"><input type="number" id="nf" class="input_saisie" required><label for="nf" class="label_saisie">Numéro de facture</label></div>
+                    <input type="radio" class="confirm" id="confirmer" name="access" style="display: none;">
+                    <div class="saisie_con"> <input type="text" id="nom" class="input_saisie" required> <label for="nom" class="label_saisie">Fournisseur </label></div>
+                    <div class="saisie_con"><input type="date" id="date" class="input_saisie" required> <label for="date" class="label_saisie valid">Date d'achat </label></div>
+                    <div class="saisie_con"><input type="number" id="nf" class="input_saisie" required><label for="nf" class="label_saisie">Numéro de facture</label></div>
                     <span style="display: inline;">
-                        <input type="radio" class="confirm" id="confirmer" name="access" style="display: none;"><label for="confirmer" class="confirm_label" id="label_confirmer">CONFIRMER</label>
-                        <input type="radio" class="confirm" id="modifier" name="access" style="display: none;"  checked><label for="modifier" class="confirm_label" id="label_modifier">MODIFIER</label>
+                        <label for="confirmer" class="confirm_label" id="label_confirmer">CONFIRMER</label>
+                        <label for="modifier" class="confirm_label" id="label_modifier">MODIFIER</label>
                     </span>
+                    <input type="radio" class="confirm" id="modifier" name="access" style="display: none;"  checked>
+
                     <div class="saisie"> <input type="text" id="nompr" class="input_saisie" required > <label for="nompr" class="label_saisie">Nom produit </label></div>
                     <div class="saisie"><input type="number" id="cb" class="input_saisie " required> <label for="cb" class="label_saisie ">Code à barres</label></div>
                     <div class="saisie"><input type="number" id="qnt" class="input_saisie " required><label for="qnt" class="label_saisie ">Quantité</label></div>

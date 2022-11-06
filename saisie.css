@@ -1,13 +1,3 @@
-.myMarket{
-    font-family: modern;
-    margin-left: 7%;
-    margin-top: 2%;
-    font-size: 9em;
-    width: fit-content;
-    background-image: linear-gradient(to left, #795344, #2e7099);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .form_saisie{
     display: flex;
@@ -61,7 +51,7 @@
 .input_saisie:focus{
     border: 1.2px solid #042336;
 }
-.saisie{
+.saisie,.saisie_con{
     position: relative;
     width: 100%;
 }
@@ -96,7 +86,7 @@
     color: #042941;
 }
 
-#confirmer:checked~#label_confirmer{
+#confirmer:checked~span>#label_confirmer{
     background-color: #967a70;
     color: #042941;
     font-size: 1.2em;
@@ -112,9 +102,32 @@
     opacity: .5;
 
 }
-#modifier:checked ~ *{
+ #modifier:checked ~ *{
     pointer-events: none;
     cursor:not-allowed;
     opacity: .2;
     pointer-events: none;
+} 
+#confirmer:checked ~ .saisie_con{
+    pointer-events: none;
+    cursor:not-allowed;
+    opacity: .4;
+    pointer-events: none;
+} 
+.check_label{
+    margin-left: 20px;
+    font-size: 2em;
+    margin-right: 30px;
+}
+.check{
+    transform: scale(1.5);
+}
+.checks{
+    display: flex;
+    left: 0;
+}
+.saisie_check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
