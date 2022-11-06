@@ -101,6 +101,7 @@
     color: #042941;
     font-size: 1.2em;
     cursor:not-allowed;
+    opacity: .5;
 
 }
 #modifier:checked~#label_modifier{
@@ -108,8 +109,12 @@
     color: #042941;
     font-size: 1.2em;
     cursor:not-allowed;
+    opacity: .5;
 
 }
-#modifier:checked~#nomp{
-    
+#modifier:checked ~ *{
+    pointer-events: none;
+    cursor:not-allowed;
+    opacity: .2;
+    pointer-events: none;
 }
